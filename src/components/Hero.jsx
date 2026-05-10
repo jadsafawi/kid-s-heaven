@@ -1,41 +1,50 @@
 export default function Hero() {
   return (
     <section
-      className="relative min-h-[80vh] flex items-center justify-start pl-6"
+      className="relative min-h-screen flex items-center"
       style={{
         backgroundImage: "url('/images/picture.jpeg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      {/* Glass card */}
-      <div className="backdrop-blur-md bg-white/10 rounded-2xl shadow-xl max-w-3xl text-center px-10 py-12">
-        
-        <h1 className="text-5xl md:text-6xl font-extrabold leading-tight text-indigo-800">
-          Welcome to <span className="text-indigo-600">Kid’s Heaven</span> 🎁
-        </h1>
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/50"></div>
 
-        <p className="mt-6 text-lg text-gray-700 font-medium">
-          A world full of fun, learning, and imagination. Discover toys that inspire creativity
-          and bring joy to every child.
-        </p>
+      {/* Content */}
+      <div className="relative z-10 w-full px-6 sm:px-10 lg:px-20">
+        <div className="max-w-2xl text-white">
+          
+          {/* Title */}
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-tight">
+            Welcome to{" "}
+            <span className="text-indigo-300">Kid’s Heaven</span> 🎁
+          </h1>
 
-        <div className="mt-8 flex gap-4 justify-center">
-          <a
-            href="/shop"
-            className="bg-indigo-600 text-white hover:bg-indigo-700 px-6 py-3 rounded-full font-semibold transition"
-          >
-            Shop Now
-          </a>
+          {/* Subtitle */}
+          <p className="mt-6 text-base sm:text-lg lg:text-xl text-gray-200 leading-relaxed">
+            Discover a magical world of toys, creativity, and fun designed
+            to bring joy and imagination to every child.
+          </p>
 
-          <a
-            href="/about"
-            className="border border-indigo-600 text-indigo-700 hover:bg-indigo-50 px-6 py-3 rounded-full font-semibold transition"
-          >
-            Learn More
-          </a>
+          {/* Buttons */}
+          <div className="mt-8 flex flex-col sm:flex-row gap-4">
+            <a
+              href="/shop"
+              className="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-full font-semibold transition duration-300 text-center"
+            >
+              Shop Now
+            </a>
+
+            <a
+              href="/about"
+              className="border border-white hover:bg-white hover:text-indigo-700 text-white px-8 py-3 rounded-full font-semibold transition duration-300 text-center"
+            >
+              Learn More
+            </a>
+          </div>
+
         </div>
-
       </div>
     </section>
   );

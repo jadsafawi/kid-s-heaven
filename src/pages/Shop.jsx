@@ -4,47 +4,47 @@ const products = [
   {
     name: "Army Toys",
     price: "$29",
-    img: "/images/army-toy.jpg",
+    img: "/images/army.webp",
   },
 
   {
     name: "Toy Bike",
     price: "$15",
-    img: "/images/toy-bike.jpg",
+    img: "/images/bike.webp",
   },
 
    {
-    name: "Toy Bike",
-    price: "$15",
-    img: "/images/toy-bike.jpg",
+    name: "Dinosaur Toy",
+    price: "$10",
+    img: "/images/dino.webp",
   },
 
    {
-    name: "Toy Bike",
-    price: "$15",
-    img: "/images/toy-bike.jpg",
-  },
-
-   {
-    name: "Toy Bike",
-    price: "$15",
-    img: "/images/toy-bike.jpg",
-  },
-
-  {
-    name: "Robot Warrior",
-    price: "$35",
-    img: "/images/robot.jpg",
-  },
-  {
-    name: "Lego House",
+    name: "Winnie The Pooh ",
     price: "$25",
-    img: "/images/lego.jpg",
+    img: "/images/winnie.webp",
+  },
+
+   {
+    name: "Starwars Lego Set",
+    price: "$35",
+    img: "/images/Starwars.jpeg",
+  },
+
+  {
+    name: "Cars Toy Set",
+    price: "$15",
+    img: "/images/cars.webp",
   },
   {
-    name: "Mini Car Pack",
+    name: "Creative puzzle Set",
+    price: "$30",
+    img: "/images/puzzle.webp",
+  },
+  {
+    name: "Princess Toy",
     price: "$18",
-    img: "/images/cars.jpg",
+    img: "/images/princess.jpeg",
   },
 ];
 
